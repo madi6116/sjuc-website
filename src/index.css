@@ -99,13 +99,7 @@ header.site-nav.scrolled {
 }
 .nav-inner { display:flex; align-items:center; justify-content:space-between; gap: 24px; }
 .brand { display:flex; align-items:center; gap:12px; }
-.brand-mark {
-  width:38px; height:38px; border-radius:50%;
-  background: var(--seal);
-  display:flex; align-items:center; justify-content:center;
-  font-family: var(--mono); color: var(--paper-soft); font-size:12px; font-weight:600;
-  flex-shrink:0;
-}
+.brand-mark { width:44px; height:44px; object-fit: contain; flex-shrink:0; }
 .brand-text { display:flex; flex-direction:column; line-height:1.15; }
 .brand-text .full { font-family: var(--serif); font-weight:600; font-size:15.5px; color: var(--jade-deep); }
 .brand-text .sub { font-family: var(--mono); font-size:10.5px; letter-spacing:.06em; color: var(--ink-soft); text-transform:uppercase; }
@@ -265,7 +259,11 @@ footer { background: var(--ink); color: rgba(239,235,221,0.7); padding: 64px 0 3
 @media (max-width:720px){ .footer-grid{ grid-template-columns:1fr; gap:32px; } }
 footer h5 { font-family: var(--mono); font-size:11.5px; letter-spacing:.08em; text-transform:uppercase; color: rgba(239,235,221,0.45); margin-bottom:18px; }
 footer .fbrand { display:flex; align-items:center; gap:12px; margin-bottom:16px; }
-footer .fbrand .full { font-family: var(--serif); font-size:18px; color: var(--paper-soft); }
+.brand-mark-chip {
+  width:34px; height:34px; border-radius:50%; background:#fff;
+  display:flex; align-items:center; justify-content:center; overflow:hidden; flex-shrink:0;
+}
+.brand-mark-chip img { width:100%; height:100%; object-fit: cover; }footer .fbrand .full { font-family: var(--serif); font-size:18px; color: var(--paper-soft); }
 footer p.desc { font-size:14px; max-width:320px; line-height:1.7; }
 footer ul { display:flex; flex-direction:column; gap:12px; }
 footer ul a { font-size:14.5px; }

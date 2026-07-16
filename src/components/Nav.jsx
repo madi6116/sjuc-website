@@ -13,7 +13,7 @@ export default function Nav({ menuOpen, setMenuOpen }) {
     <header className={`site-nav ${scrolled ? 'scrolled' : ''}`}>
       <div className="wrap nav-inner">
         <a href="#top" className="brand">
-          <span className="brand-mark">印</span>
+          <img src="/sjuc-seal.png" alt="SJUC seal" className="brand-mark" />
           <span className="brand-text">
             <span className="full">San Jose University of California</span>
             <span className="sub">TCM &amp; Acupuncture</span>

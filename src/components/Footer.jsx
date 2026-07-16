@@ -5,7 +5,9 @@ export default function Footer() {
         <div className="footer-grid">
           <div>
             <div className="fbrand">
-              <span className="brand-mark" style={{ width: '34px', height: '34px', fontSize: '11px' }}>印</span>
+              <span className="brand-mark-chip">
+                <img src="/sjuc-seal.png" alt="SJUC seal" />
+              </span>
               <span className="full">San Jose University of California</span>
             </div>
             <p className="desc">
